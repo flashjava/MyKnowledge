@@ -1,12 +1,13 @@
 以root用户进行JDK环境变量的配置
 
 配置classpath，修改所有用户的环境变量
-'$ sudo gedit /etc/profile'
+
+`$ sudo gedit /etc/profile`
 
 
 在文件最后添加
 
->#set java environment
+>\#set java environment
 
 >JAVA_HOME=/usr/java/jdk1.7.0_71
 
