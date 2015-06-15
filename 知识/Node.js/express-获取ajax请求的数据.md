@@ -16,17 +16,23 @@ ajax最常见的请求方式有两种：GET和POST。
 
 >前台代码：
 >
->`window.location = "/pic/singlePic?picName=张三"`
-> 
+>```js
+>
+>window.location = "/pic/singlePic?picName=张三"
+>
+>```
 >后台代码：
 >
->`router.get("/singlePic", function (req, res) {`
+>```js
 >
->`var imageName = req.query.picName;  // 此时imageName的值为“张三”`
+>router.get("/singlePic", function (req, res) {
 >
->`......`
+>    var imageName = req.query.picName;  // 此时imageName的值为“张三”
 >
->`})`
+>    ......
+>
+>})
+>```
 
 
 ##POST方式
