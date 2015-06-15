@@ -15,25 +15,17 @@ ajax最常见的请求方式有两种：GET和POST。
 示例代码：
 
 >前台代码：
->
 >```js
->
 >window.location = "/pic/singlePic?picName=张三"
->
 >```
+>
 >后台代码：
->
 >```js
->
 >router.get("/singlePic", function (req, res) {
->
->    var imageName = req.query.picName;  // 此时imageName的值为“张三”
->
->    ......
->
->})
+    var imageName = req.query.picName;  // 此时imageName的值为“张三”
+    ......
+})
 >```
-
 
 ##POST方式
 
@@ -42,3 +34,32 @@ ajax最常见的请求方式有两种：GET和POST。
 使用`req.body.数据名称`的方式获得请求的数据。
 
 示例代码：
+>前台代码：
+>```js
+>$.ajax({
+    url: "/singlePic",
+    type: "POST",
+    data: {
+        picName: "李四"
+    }
+});
+>```
+>
+>后台代码：
+>```js
+>var bodyParser = require('body-parser');
+
+>...
+
+>// 定义数据解析器
+
+>app.use(bodyParser.json());
+>app.use(bodyParser.urlencoded({ extended: false }));
+
+>...
+
+>router.post("/singlePic", function (req, res) {
+    var imageName = req.body.picName;  // 此时imageName的值为“李四”
+    ......
+})
+>```
