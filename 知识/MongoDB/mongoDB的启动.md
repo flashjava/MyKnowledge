@@ -21,6 +21,11 @@
 	>--dbpath 参数是设定数据库文件的存放路径。
 
 	MongoDB默认的数据目录为：C:\data\db。如果不用默认目录，则需要在在mongod.exe命令
+
 	后加--dbpath参数。
 
 	我这里设置的数据目录为：D:\MyDatabase\mongodb\3.0.4\data
+
+	启动命令，如图所示：
+
+	![启动的Shell界面](/resources/forKnowledge/mongoDB/mongoDB的启动/启动的Shell界面.png "启动的Shell界面")
