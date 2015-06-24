@@ -29,3 +29,9 @@
 	启动命令，如图所示：
 
 	![启动的Shell界面](/resources/forKnowledge/mongoDB/mongoDB的启动/启动的Shell界面.png "启动的Shell界面")
+
+	访问`http://localhost:27017/`地址，页面如图所示：
+
+	![浏览器访问27017端口](/resources/forKnowledge/mongoDB/mongoDB的启动/浏览器访问27017端口.png "浏览器访问27017端口")
+
+至此，mongoDB已正常启动了。
